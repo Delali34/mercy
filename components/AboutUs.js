@@ -46,7 +46,7 @@ function AboutUs() {
             <h1 className=" text-2xl text-center font-bold text-black pb-5 lg:text-left">
               The problem
             </h1>
-            <h1 className=" text-[20px] tracking-tighter  font-mont  text-black text-justify">
+            <h1 className=" text-[20px] tracking-tighter  font-mont  text-black ">
               Lack of awareness about{" "}
               <span className="text-green-500 font-bold">
                 clean and renewable energy
@@ -72,14 +72,14 @@ function AboutUs() {
           </div>
         </div>
       </div>
-      <div className="bg-[#C8D0D6]">
+      <div className="bg-[#fbfbfb]">
         {" "}
         <div className="max-w-[1320px] mx-auto px-10 pt-20 lg:flex justify-between  w-full gap-10">
           <div className="flex-1 py-12 lg:py-1">
             <h1 className=" text-2xl text-center font-bold text-black pb-5 lg:text-left">
               Our Solution
             </h1>
-            <h1 className=" text-[20px] tracking-tighter  font-mont  text-black text-justify">
+            <h1 className=" text-[20px] tracking-tighter  font-mont  text-black">
               <span className="text-green-500 font-bold">CleanEnergy Café</span>{" "}
               aims to initiate{" "}
               <span className="text-green-500 font-bold">
