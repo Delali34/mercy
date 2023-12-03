@@ -13,7 +13,7 @@ function Homepage() {
             <h1 className="font-bold">CleanEnergyCafe</h1>
           </div>
           <div className="lg:flex hidden space-x-6 items-center">
-            <Link href="">
+            <Link href="/">
               <h1 className="hover:font-bold hover:text-green-400">Home</h1>
             </Link>
             <Link href="/AboutUs">
