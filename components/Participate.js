@@ -64,7 +64,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="max-w-2xl mx-auto p-8 mt-8 bg-white rounded shadow-md">
+    <div className="max-w-2xl mx-auto p-8 lg:mt-8 bg-white rounded shadow-md">
       {isSuccess ? (
         <div className="flex items-center text-green-600">
           <FaCheckCircle className="w-6 h-6 mr-2" />
