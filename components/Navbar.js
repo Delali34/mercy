@@ -19,7 +19,7 @@ function Homepage() {
             <Link href="/AboutUs">
               <h1 className="hover:font-bold hover:text-green-400">About</h1>
             </Link>
-            <Link href="">
+            <Link href="/blog">
               {" "}
               <h1 className="hover:font-bold hover:text-green-400">News</h1>
             </Link>
