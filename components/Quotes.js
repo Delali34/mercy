@@ -20,7 +20,6 @@ const DemoCarousel = () => {
           <div className="flex-1">
             <span className="text-8xl text-green-400 font-bold">"</span>
             <p className="">
-              {" "}
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
               quaerat quis minima maxime veniam quo libero illum, laudantium
               itaque, autem mollitia praesentium quisquam ex sit temporibus nisi

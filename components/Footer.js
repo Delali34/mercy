@@ -13,7 +13,9 @@ const Footer = () => {
           <h3 className="text-xl font-bold mb-4 text-center">
             CleanEnergyCafe
           </h3>
-          <p>Making a Difference, One Act of Kindness at a Time</p>
+          <p className="text-center">
+            Making a Difference, One Act of Cleanness at a Time.
+          </p>
           <div className="flex justify-center space-x-4 mt-4">
             <a
               href="#"
