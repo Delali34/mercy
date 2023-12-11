@@ -36,12 +36,6 @@ const PostCard = ({ post }) => {
                 {post.title}
               </h2>
             </div>
-            <div>
-              {" "}
-              <p className="md:text-xl text-sm w-full">
-                {truncateText(post.excerpt, 150)}
-              </p>
-            </div>
           </Link>
         </div>
       </div>
