@@ -30,7 +30,7 @@ function Benefits() {
             />
           </div>
           <div className="flex-1  h-full">
-            <div className="flex items-center pt-10 md:pt-0   gap-5">
+            <div className="flex md:flex-row flex-col items-center pt-10 md:pt-0   gap-5">
               <div className="rounded-full p-3 bg-green-500">
                 <FaHouseDamage className="text-2xl text-white " />
               </div>
@@ -45,7 +45,7 @@ function Benefits() {
                 </p>
               </div>
             </div>
-            <div className="flex items-center pt-10  gap-5">
+            <div className="flex md:flex-row flex-col items-center pt-10  gap-5">
               <div className="rounded-full p-3 bg-green-500">
                 <FaHouseDamage className="text-2xl text-white " />
               </div>
@@ -60,7 +60,7 @@ function Benefits() {
                 </p>
               </div>
             </div>
-            <div className="flex items-center pt-10  gap-5">
+            <div className="flex md:flex-row flex-col items-center pt-10  gap-5">
               <div className="rounded-full p-3 bg-green-500">
                 <FaHouseDamage className="text-2xl text-white " />
               </div>
@@ -75,7 +75,7 @@ function Benefits() {
                 </p>
               </div>
             </div>
-            <div className="flex items-center pt-10 gap-5">
+            <div className="flex md:flex-row flex-col items-center pt-10 gap-5">
               <div className="rounded-full p-3 bg-green-500">
                 <FaHouseDamage className="text-2xl text-white " />
               </div>

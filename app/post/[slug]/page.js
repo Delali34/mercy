@@ -24,7 +24,7 @@ const Page = ({ params }) => {
   if (!post) {
     return (
       <div className="bg-white flex justify-center items-center h-screen">
-        <img src="/load.gif" alt="" />
+        loading
       </div>
     );
   }
