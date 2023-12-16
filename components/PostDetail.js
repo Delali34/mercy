@@ -65,7 +65,7 @@ const PostDetail = ({ post }) => {
         </div>
       </div>
       <div className="flex justify-center">
-        <div className="max-w-[1320px] lg:px-10 px-5 text-black lg:pt-20 pt-10">
+        <div className="max-w-[1320px] lg:px-10 px-5 text-black ">
           <div className="flex flex-col lg:flex-row justify-between lg:gap-0 gap-5">
             <div className="w-full lg:text-xl text-sm">
               <RichText content={post.content.raw} renderers={renderers} />
