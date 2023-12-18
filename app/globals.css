@@ -91,9 +91,3 @@ blockquote {
   border-color: #0056b3; /* Darker blue for focus */
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
-
-/* Specific Styles */
-
-.text-black {
-  color: #212529; /* Black color for text */
-}
