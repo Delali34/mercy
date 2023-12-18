@@ -61,15 +61,7 @@ const Navbar = () => {
             CleanEnergyCafe
           </span>
         </div>
-        {/* <div className="lg:flex hidden gap-12 text-md text-zinc-400">
-          <Link href="#" className="text-black font-medium">
-            <AnimatedLink title={"Home"} />
-          </Link>
-          <Link href={"/projects"}>
-            <AnimatedLink title={"Projects"} />
-          </Link>
-          <AnimatedLink title={"Contact"} />
-        </div> */}
+
         <div
           className="cursor-pointer lg:hidden text-md text-black"
           onClick={toggleMenu}

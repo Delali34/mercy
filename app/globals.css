@@ -97,21 +97,3 @@ blockquote {
 .text-black {
   color: #212529; /* Black color for text */
 }
-
-/* Adjusting the flex container for dropdowns */
-.flex {
-  display: flex;
-  gap: 1rem; /* Space between elements */
-  align-items: center;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .flex {
-    flex-direction: column;
-  }
-
-  .form-select {
-    width: 100%; /* Full width on smaller screens */
-  }
-}
