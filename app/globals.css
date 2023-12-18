@@ -74,3 +74,44 @@ blockquote {
 .paragraph {
   padding-top: 20px; /* Adjust as needed */
 }
+/* General Styles for Select Dropdowns */
+.form-select {
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  border: 2px solid #007bff; /* Blue border color */
+  background-color: #ffffff; /* White background */
+  color: #333333; /* Dark text color */
+  font-size: 1rem;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.form-select:focus {
+  border-color: #0056b3; /* Darker blue for focus */
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Specific Styles */
+
+.text-black {
+  color: #212529; /* Black color for text */
+}
+
+/* Adjusting the flex container for dropdowns */
+.flex {
+  display: flex;
+  gap: 1rem; /* Space between elements */
+  align-items: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .flex {
+    flex-direction: column;
+  }
+
+  .form-select {
+    width: 100%; /* Full width on smaller screens */
+  }
+}

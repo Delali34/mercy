@@ -7,7 +7,7 @@ function Homepage() {
   return (
     <div>
       <div>
-        <div className="max-w-7xl mx-auto  flex justify-between font-mont items-center pt-10 lg:px-0 px-5">
+        <div className="max-w-7xl mx-auto  flex justify-between font-mont items-center pt-10  px-5">
           <div>
             {/* <Image src="/energy.png" width={250} height={250} alt="" /> */}
             <h1 className="font-bold">CleanEnergyCafe</h1>
@@ -25,7 +25,9 @@ function Homepage() {
             </Link>
             <Link href="/ImpactStories">
               {" "}
-              <h1 className="hover:font-bold hover:text-green-400">Impact</h1>
+              <h1 className="hover:font-bold hover:text-green-400">
+                Impact Stories
+              </h1>
             </Link>
           </div>
           <Link href="/Participate">

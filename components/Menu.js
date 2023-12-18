@@ -8,7 +8,7 @@ const navLinks = [
   { title: "Home", href: "/" },
   { title: "About Us", href: "/AboutUs" },
   { title: "News & Updates", href: "/blog" },
-  { title: "Our Impact", href: "/ImpactStories" },
+  { title: "Impact Stories", href: "/ImpactStories" },
   { title: "Submit Story", href: "/Participate" },
 ];
 const Navbar = () => {
