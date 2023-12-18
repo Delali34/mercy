@@ -2,8 +2,9 @@
 import React from "react";
 import { getPostDetails } from "@/queries";
 import PostDetail from "@/components/Impact/PostDetail";
-
-import Author from "@/components/Author";
+import Author from "@/components/Impact/Author";
+import Comments from "@/components/Impact/Comments";
+import CommentsForm from "@/components/Impact/CommentsForm";
 
 const Page = ({ params }) => {
   const [post, setPost] = React.useState(null);
@@ -33,6 +34,8 @@ const Page = ({ params }) => {
     <div className="bg-white h-[100%]">
       <PostDetail post={post} />
       <Author author={post.author} />
+      {/* <CommentsForm slug={post.slug} />
+      <Comments slug={post.slug} /> */}
     </div>
   );
 };
