@@ -9,20 +9,33 @@ function AboutUs() {
         <div className="max-w-[1320px] mx-auto px-10 pt-20 lg:flex justify-between items-center w-full gap-10">
           <div className="flex-1">
             <h1 className=" text-2xl text-center lg:text-left">About Us</h1>
-            <h1 className="pt-10 md:text-6xl text-4xl font-mont font-bold text-green-500 text-center lg:text-left">
+            <h1 className="pt-10 md:text-4xl text-2xl font-mont font-bold text-green-500 text-center lg:text-left">
               The Future <br />{" "}
               <span className="text-black"> Of Sustainable</span> <br /> Energy
             </h1>
-            <p className="pt-5 lg:max-w-[600px] text-[14px] text-center lg:text-left pb-10 lg:pb-0">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
-              ipsam temporibus esse qui minima excepturi iusto, nostrum
+            <p className="pt-5 lg:max-w-[600px] md:text-[17px] text-[15px] text-center lg:text-left pb-10 lg:pb-0">
+              <span className="font-bold">CleanEnergy Café</span> is an African
+              clean and renewable energy awareness creation organization funded
+              by the{" "}
+              <span className="font-bold">
+                {" "}
+                Ashesi Entrepreneurship Centers
+              </span>
+              . We are led by our vision to encourage transition to clean and
+              renewable energy through celebrating the creativity of the African
+              people in transforming Africa into a brighter and cleaner
+              continent. We do this through our great love for telling the
+              amazing stories of how renewable energy innovations are changing
+              communities throughout Africa. Join us as we bring to life
+              innovations and success stories as we interact with young,
+              passionate African innovators in the African community.
             </p>
           </div>
 
           <div className="flex-1">
             <Image
               className="object-cover w-full md:h-[500px] h-[300px] "
-              src="/hero1 (3).jpg"
+              src="/clean.jpg"
               width={1000}
               height={1000}
               alt=""
@@ -36,7 +49,7 @@ function AboutUs() {
           <div className="flex-1">
             <Image
               className="object-cover w-full md:h-[500px] h-[300px]"
-              src="/hero1 (3).jpg"
+              src="/problem.jpg"
               width={1000}
               height={1000}
               alt=""
@@ -56,7 +69,7 @@ function AboutUs() {
               <span className="text-green-500 font-bold">
                 women in rural areas
               </span>{" "}
-              women in rural areas who continue to use{" "}
+              who continue to use{" "}
               <span className="text-green-500 font-bold">
                 firewood for cooking,
               </span>{" "}
@@ -103,7 +116,7 @@ function AboutUs() {
           <div className="flex-1">
             <Image
               className="object-cover w-full md:h-[500px] h-[300px]"
-              src="/hero1 (3).jpg"
+              src="/solution1.jpg"
               width={1000}
               height={1000}
               alt=""
@@ -111,6 +124,115 @@ function AboutUs() {
           </div>
         </div>
       </div>
+      <div className="bg-[#fbfbfb]">
+        <h1 className="text-center pt-20 font-bold text-3xl">
+          Core Activities
+        </h1>
+        <div className="max-w-[1320px] mx-auto px-10 pt-20 lg:flex justify-between  w-full gap-10">
+          <div className="flex-1 py-12 lg:py-1">
+            <h1 className=" text-2xl text-center font-bold text-black pb-5 lg:text-left">
+              Awareness Creation
+            </h1>
+            <p>
+              CleanEnergy Café shares local African renewable energy innovation
+              stories through social media, advertising, and community
+              interaction to raise awareness about clean energy options, climate
+              change, and the importance of transitioning to renewable sources.
+            </p>
+          </div>
+          <div className="flex-1">
+            <Image
+              className="object-cover w-full md:h-[300px] h-[200px]"
+              src="/aware.jpg"
+              width={1000}
+              height={1000}
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div className="bg-[#fbfbfb]">
+        <div className="max-w-[1320px] mx-auto px-10 pt-20 lg:flex justify-between  w-full gap-10">
+          <div className="flex-1 py-12 lg:py-1">
+            <h1 className=" text-2xl text-center font-bold text-black pb-5 lg:text-left">
+              Partnership and collaboration
+            </h1>
+            <p>
+              CleanEnergy Café partners the youth, innovators and businesses to
+              amplify messaging, share knowledge, and collaborate on clean
+              energy initiatives.
+            </p>
+          </div>
+          <div className="flex-1">
+            <Image
+              className="object-cover w-full md:h-[300px] h-[200px]"
+              src="/partner.jpg"
+              width={1000}
+              height={1000}
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div className="bg-[#fbfbfb]">
+        <div className="max-w-[1320px] mx-auto px-10 pt-20 lg:flex justify-between  w-full gap-10">
+          <div className="flex-1 py-12 lg:py-1">
+            <h1 className=" text-2xl text-center font-bold text-black pb-5 lg:text-left">
+              Public relations and media engagement
+            </h1>
+            <p>
+              Working with social media outlets to share success stories, and
+              innovations to influence public opinion positively towards clean
+              energy.
+            </p>
+          </div>
+          <div className="flex-1">
+            <Image
+              className="object-cover w-full md:h-[300px] h-[200px]"
+              src="/meida.jpg"
+              width={1000}
+              height={1000}
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div className="bg-[#fbfbfb] pb-10">
+        <div className="max-w-[1320px] mx-auto px-10 pt-20 lg:flex justify-between  w-full gap-10">
+          <div className="flex-1 py-12 lg:py-1">
+            <h1 className=" text-2xl text-center font-bold text-black pb-5 lg:text-left">
+              Monitoring and evaluation
+            </h1>
+            <p>
+              CleanEnergy Café continuously assesses the impact of awareness
+              creation activities through surveys, data collection, and analysis
+              to measure the effectiveness and make necessary improvements.
+            </p>
+          </div>
+          <div className="flex-1">
+            <Image
+              className="object-cover w-full md:h-[300px] h-[200px]"
+              src="/feedback.jpg"
+              width={1000}
+              height={1000}
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div className="max-w-[1320px] mx-auto px-10 py-10">
+        <h1 className="font-bold text-xl text-center ">Funding Partners</h1>
+        <div className="flex items-center justify-center">
+          <Image
+            className="object-cover  w-[500px]  h-[500px]"
+            src="/ashesi.png"
+            width={1000}
+            height={1000}
+            alt=""
+          />
+        </div>
+      </div>
+
       <div className="bg h-[300px] flex justify-center items-center px-5">
         <h1 className="md:text-6xl text-4xl -tracking-[3px] font-mont text-center text-white font-bold">
           A Brighter Future With Clean <br /> Energy

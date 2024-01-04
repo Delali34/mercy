@@ -21,12 +21,14 @@ function Homepage() {
             </Link>
             <Link href="/blog">
               {" "}
-              <h1 className="hover:font-bold hover:text-green-400">News</h1>
+              <h1 className="hover:font-bold hover:text-green-400">
+                Featured Stories
+              </h1>
             </Link>
             <Link href="/ImpactStories">
               {" "}
               <h1 className="hover:font-bold hover:text-green-400">
-                Impact Stories
+                Impact Assessment
               </h1>
             </Link>
           </div>
