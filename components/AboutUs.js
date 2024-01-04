@@ -9,11 +9,8 @@ function AboutUs() {
         <div className="max-w-[1320px] mx-auto px-10 pt-20 lg:flex justify-between items-center w-full gap-10">
           <div className="flex-1">
             <h1 className=" text-2xl text-center lg:text-left">About Us</h1>
-            <h1 className="pt-10 md:text-4xl text-2xl font-mont font-bold text-green-500 text-center lg:text-left">
-              The Future <br />{" "}
-              <span className="text-black"> Of Sustainable</span> <br /> Energy
-            </h1>
-            <p className="pt-5 lg:max-w-[600px] md:text-[17px] text-[15px] text-center lg:text-left pb-10 lg:pb-0">
+
+            <p className="pt-5 lg:max-w-[600px] md:text-[17px] text-[15px] pb-10 lg:pb-0">
               <span className="font-bold">CleanEnergy Café</span> is an African
               clean and renewable energy awareness creation organization funded
               by the{" "}
@@ -125,10 +122,10 @@ function AboutUs() {
         </div>
       </div>
       <div className="bg-[#fbfbfb]">
-        <h1 className="text-center pt-20 font-bold text-3xl">
+        <h1 className="text-center pt-20 lg:pb-10 pb-5 font-bold text-3xl">
           Core Activities
         </h1>
-        <div className="max-w-[1320px] mx-auto px-10 pt-20 lg:flex justify-between  w-full gap-10">
+        <div className="max-w-[1320px] mx-auto px-10  lg:flex justify-between  w-full gap-10">
           <div className="flex-1 py-12 lg:py-1">
             <h1 className=" text-2xl text-center font-bold text-black pb-5 lg:text-left">
               Awareness Creation
@@ -224,7 +221,7 @@ function AboutUs() {
         <h1 className="font-bold text-xl text-center ">Funding Partners</h1>
         <div className="flex items-center justify-center">
           <Image
-            className="object-cover  w-[500px]  h-[500px]"
+            className="  w-[400px]  h-[400px]"
             src="/ashesi.png"
             width={1000}
             height={1000}
