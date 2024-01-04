@@ -18,7 +18,7 @@ function AboutUs() {
                 {" "}
                 Ashesi Entrepreneurship Centers
               </span>
-              . We are led by our vision to encourage transition to clean and
+              We are led by our vision to encourage transition to clean and
               renewable energy through celebrating the creativity of the African
               people in transforming Africa into a brighter and cleaner
               continent. We do this through our great love for telling the
@@ -56,7 +56,7 @@ function AboutUs() {
             <h1 className=" text-2xl text-center font-bold text-black pb-5 lg:text-left">
               The problem
             </h1>
-            <h1 className=" text-[20px] tracking-tighter  font-mont  text-black ">
+            <h1 className=" lg:text-[20px] text-[15px] tracking-tighter  font-mont  text-black ">
               Lack of awareness about{" "}
               <span className="text-green-500 font-bold">
                 clean and renewable energy
@@ -89,7 +89,7 @@ function AboutUs() {
             <h1 className=" text-2xl text-center font-bold text-black pb-5 lg:text-left">
               Our Solution
             </h1>
-            <h1 className=" text-[20px] tracking-tighter  font-mont  text-black">
+            <h1 className=" lg:text-[20px] text-[15px] tracking-tighter  font-mont  text-black">
               <span className="text-green-500 font-bold">CleanEnergy Café</span>{" "}
               aims to initiate{" "}
               <span className="text-green-500 font-bold">
