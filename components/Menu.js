@@ -141,7 +141,7 @@ const MobileNavLink = ({ title, href }) => {
   return (
     <motion.div
       variants={mobileLinkVars}
-      className="text-3xl font-semibold uppercase text-black"
+      className="text-2xl font-semibold uppercase text-black"
     >
       <Link href={href} onClick={handleClick}>
         {/* Use an anchor tag and add onClick handler */}
