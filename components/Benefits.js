@@ -4,7 +4,7 @@ import { FaHouseDamage } from "react-icons/fa";
 
 function Benefits() {
   return (
-    <div className="max-w-[1320px] mx-auto px-10 py-10 font-mont">
+    <div className="max-w-[1320px] mx-auto lg:px-10 px-5 py-10 font-mont">
       <div>
         {" "}
         <div>
