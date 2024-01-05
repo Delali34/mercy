@@ -2,83 +2,78 @@ import { request, gql } from "graphql-request";
 
 const graphqlAPI = process.env.NEXT_PUBLIC_GRAPHCMS_BLOG_ENDPOINT;
 
-export const getPosts = async (categorySlug, regionSlug) => {
+export const getPosts = async (categorySlug, regionSlug, themeSlug) => {
   let query;
   let variables = {};
 
-  // Building the query based on categorySlug and regionSlug
-  if (categorySlug && regionSlug) {
-    // Both category and region provided
+  // Define the common fields to fetch
+  const postFields = `
+    author {
+      bio
+      name
+      id
+      photo {
+        url
+      }
+    }
+    createdAt
+    slug
+    title
+    excerpt
+    featuredImage {
+      url
+    }
+    categories {
+      name
+      slug
+    }
+    regions {
+      name
+      slug
+    }
+    themes {
+      name
+      slug
+    }
+  `;
+
+  // Determine the query based on the provided filters
+  if (categorySlug && regionSlug && themeSlug) {
+    // All three provided
     query = gql`
-      query GetPostsByCategoryAndRegion(
-        $categorySlug: String!
-        $regionSlug: String!
+      query GetPostsByCategoryRegionAndTheme(
+        $categorySlug: String!,
+        $regionSlug: String!,
+        $themeSlug: String!
       ) {
         postsConnection(
           where: {
             AND: [
-              { categories_some: { slug: $categorySlug } }
-              { regions_some: { slug: $regionSlug } }
+              { categories_some: { slug: $categorySlug } },
+              { regions_some: { slug: $regionSlug } },
+              { themes_some: { slug: $themeSlug } }
             ]
           }
         ) {
           edges {
             node {
-              author {
-                bio
-                name
-                id
-                photo {
-                  url
-                }
-              }
-              createdAt
-              slug
-              title
-              excerpt
-              featuredImage {
-                url
-              }
-              categories {
-                name
-                slug
-              }
-              regions {
-                name
-                slug
-              }
+              ${postFields}
             }
           }
         }
       }
     `;
-    variables = { categorySlug, regionSlug };
+    variables = { categorySlug, regionSlug, themeSlug };
   } else if (categorySlug) {
     // Only category provided
     query = gql`
       query GetPostsByCategory($categorySlug: String!) {
-        postsConnection(where: { categories_some: { slug: $categorySlug } }) {
+        postsConnection(
+          where: { categories_some: { slug: $categorySlug } }
+        ) {
           edges {
             node {
-              author {
-                bio
-                name
-                id
-                photo {
-                  url
-                }
-              }
-              createdAt
-              slug
-              title
-              excerpt
-              featuredImage {
-                url
-              }
-              categories {
-                name
-                slug
-              }
+              ${postFields}
             }
           }
         }
@@ -89,79 +84,58 @@ export const getPosts = async (categorySlug, regionSlug) => {
     // Only region provided
     query = gql`
       query GetPostsByRegion($regionSlug: String!) {
-        postsConnection(where: { regions_some: { slug: $regionSlug } }) {
+        postsConnection(
+          where: { regions_some: { slug: $regionSlug } }
+        ) {
           edges {
             node {
-              author {
-                bio
-                name
-                id
-                photo {
-                  url
-                }
-              }
-              createdAt
-              slug
-              title
-              excerpt
-              featuredImage {
-                url
-              }
-              regions {
-                name
-                slug
-              }
+              ${postFields}
             }
           }
         }
       }
     `;
     variables = { regionSlug };
-  } else {
-    // Neither category nor region provided
+  } else if (themeSlug) {
+    // Only theme provided
     query = gql`
-      query GetAllPosts {
-        postsConnection {
+      query GetPostsByTheme($themeSlug: String!) {
+        postsConnection(
+          where: { themes_some: { slug: $themeSlug } }
+        ) {
           edges {
             node {
-              author {
-                bio
-                name
-                id
-                photo {
-                  url
-                }
-              }
-              createdAt
-              slug
-              title
-              excerpt
-              featuredImage {
-                url
-              }
-              categories {
-                name
-                slug
-              }
-              regions {
-                name
-                slug
-              }
+              ${postFields}
             }
           }
         }
       }
     `;
+    variables = { themeSlug };
+  } else {
+    // No filters provided
+    query = gql`
+      query GetAllPosts {
+        postsConnection {
+          edges {
+            node {
+              ${postFields}
+            }
+          }
+        }
+      }
+    `;
+    // No variables needed if no filters are applied
   }
 
   try {
     const result = await request(graphqlAPI, query, variables);
     return result.postsConnection.edges;
   } catch (error) {
+    console.error("Error fetching posts:", error);
     throw new Error("Failed to fetch posts");
   }
 };
-
 export const getRecentPosts = async () => {
   const query = gql`
     query GetRecentPosts {
@@ -238,6 +212,24 @@ export const getCategories = async () => {
     return result.categories;
   } catch (error) {
     throw new Error("Failed to fetch categories");
+  }
+};
+export const getThemes = async () => {
+  const query = gql`
+    query GetThemes {
+      themes {
+        name
+        slug
+      }
+    }
+  `;
+
+  try {
+    const result = await request(graphqlAPI, query);
+    return result.themes;
+  } catch (error) {
+    console.error("Failed to fetch themes:", error);
+    throw new Error("Failed to fetch themes");
   }
 };
 

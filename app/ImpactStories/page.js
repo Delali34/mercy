@@ -1,18 +1,33 @@
+// Import React and necessary hooks
 "use client";
 import React, { useState, useEffect } from "react";
-import { getPosts, getCategories, getRegions } from "@/queries/index";
+
+// Import your query functions
+import {
+  getPosts,
+  getCategories,
+  getRegions,
+  getThemes,
+} from "@/queries/index";
+
+// Import any components you're using
 import Blogbanner from "@/components/Impact/Blogbanner";
 import PostCard from "@/components/Impact/PostCard";
 
 export default function Home() {
+  // State for posts, categories, regions, and themes
   const [posts, setPosts] = useState([]);
   const [categories, setCategories] = useState([]);
   const [regions, setRegions] = useState([]);
+  const [themes, setThemes] = useState([]);
+
+  // State for selected category, region, and theme
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [selectedRegion, setSelectedRegion] = useState("all");
+  const [selectedTheme, setSelectedTheme] = useState("all");
 
+  // Fetch categories, regions, and themes on component mount
   useEffect(() => {
-    // Fetch categories and regions
     getCategories().then((fetchedCategories) => {
       setCategories(fetchedCategories);
     });
@@ -20,23 +35,25 @@ export default function Home() {
     getRegions().then((fetchedRegions) => {
       setRegions(fetchedRegions);
     });
+
+    getThemes().then((fetchedThemes) => {
+      setThemes(fetchedThemes);
+    });
   }, []);
 
+  // Fetch posts whenever selectedCategory, selectedRegion, or selectedTheme changes
   useEffect(() => {
     async function fetchData() {
       const categorySlug = selectedCategory !== "all" ? selectedCategory : null;
       const regionSlug = selectedRegion !== "all" ? selectedRegion : null;
-
-      console.log(
-        "Fetching posts with category:",
-        categorySlug,
-        "and region:",
-        regionSlug
-      );
+      const themeSlug = selectedTheme !== "all" ? selectedTheme : null;
 
       try {
-        const fetchedPosts = await getPosts(categorySlug, regionSlug);
-        console.log("Fetched Posts:", fetchedPosts);
+        const fetchedPosts = await getPosts(
+          categorySlug,
+          regionSlug,
+          themeSlug
+        );
         setPosts(fetchedPosts);
       } catch (error) {
         console.error("Error fetching posts:", error);
@@ -44,7 +61,7 @@ export default function Home() {
     }
 
     fetchData();
-  }, [selectedCategory, selectedRegion]);
+  }, [selectedCategory, selectedRegion, selectedTheme]);
 
   return (
     <div className="bg4 h-[100%] pb-10 w-full">
@@ -57,8 +74,9 @@ export default function Home() {
               Impact Assessment
             </h1>
           </div>
-          {/* Dropdowns for Category and Region */}
-          <div className="md:flex items-center gap-4">
+
+          {/* Dropdowns for Category, Region, and Theme */}
+          <div className="flex md:flex-row flex-col items-center gap-4">
             {/* Category Dropdown */}
             <select
               value={selectedCategory}
@@ -86,6 +104,20 @@ export default function Home() {
                 </option>
               ))}
             </select>
+
+            {/* Theme Dropdown */}
+            <select
+              value={selectedTheme}
+              onChange={(e) => setSelectedTheme(e.target.value)}
+              className="form-select"
+            >
+              <option value="all">All Themes</option>
+              {themes.map((theme) => (
+                <option key={theme.slug} value={theme.slug}>
+                  {theme.name}
+                </option>
+              ))}
+            </select>
           </div>
 
           {/* Rest of the component */}
@@ -98,7 +130,9 @@ export default function Home() {
                   </div>
                 ))
               ) : (
-                <p>No posts found for the selected category or region.</p>
+                <p>
+                  No posts found for the selected category, region, or theme.
+                </p>
               )}
             </div>
           </div>
