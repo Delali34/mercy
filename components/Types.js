@@ -4,7 +4,7 @@ import Image from "next/image";
 function Types() {
   return (
     <div>
-      <div className="max-w-[1320px] mx-auto px-10 py-10 font-mont">
+      <div className="max-w-[1320px] mx-auto lg:px-10 px-5 py-10 font-mont">
         <div>
           <h1 className="text-center text-4xl font-bold">
             Types Of <br />

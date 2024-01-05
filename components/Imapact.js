@@ -18,7 +18,7 @@ function Imapact() {
 
   return (
     <div className="bg-black relative">
-      <div className="max-w-[1320px] mx-auto px-10 pb-20  flex lg:flex-row flex-col justify-between items-center gap-10">
+      <div className="max-w-[1320px] mx-auto lg:px-10 px-5 pb-20  flex lg:flex-row flex-col justify-between items-center gap-10">
         <div className="flex-1">
           <div className="">
             <Image

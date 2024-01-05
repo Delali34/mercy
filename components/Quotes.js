@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const DemoCarousel = () => {
   return (
-    <div className="max-w-[1320px] mx-auto  px-10 py-20">
+    <div className="max-w-[1320px] mx-auto  lg:px-10 px-5 py-20">
       {" "}
       <Carousel
         infiniteLoop={true}
