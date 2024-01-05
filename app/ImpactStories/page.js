@@ -77,6 +77,18 @@ export default function Home() {
 
           {/* Dropdowns for Category, Region, and Theme */}
           <div className="flex md:flex-row flex-col items-center gap-4">
+            <select
+              value={selectedTheme}
+              onChange={(e) => setSelectedTheme(e.target.value)}
+              className="form-select"
+            >
+              <option value="all">All Themes</option>
+              {themes.map((theme) => (
+                <option key={theme.slug} value={theme.slug}>
+                  {theme.name}
+                </option>
+              ))}
+            </select>
             {/* Category Dropdown */}
             <select
               value={selectedCategory}
@@ -106,18 +118,6 @@ export default function Home() {
             </select>
 
             {/* Theme Dropdown */}
-            <select
-              value={selectedTheme}
-              onChange={(e) => setSelectedTheme(e.target.value)}
-              className="form-select"
-            >
-              <option value="all">All Themes</option>
-              {themes.map((theme) => (
-                <option key={theme.slug} value={theme.slug}>
-                  {theme.name}
-                </option>
-              ))}
-            </select>
           </div>
 
           {/* Rest of the component */}
