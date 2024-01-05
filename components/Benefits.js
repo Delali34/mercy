@@ -29,7 +29,7 @@ function Benefits() {
               height={1000}
             />
           </div>
-          <div className="flex-1  h-full">
+          <div className="flex-1  lg:text-left text-center  h-full">
             <div className="flex md:flex-row flex-col items-center pt-10 md:pt-0   gap-5">
               <div className="rounded-full p-3 bg-green-500">
                 <FaHouseDamage className="text-2xl text-white " />
