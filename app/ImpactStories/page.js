@@ -65,7 +65,7 @@ export default function Home() {
               onChange={(e) => setSelectedCategory(e.target.value)}
               className="form-select"
             >
-              <option value="all">All Categories</option>
+              <option value="all">All Technologies</option>
               {categories.map((category) => (
                 <option key={category.slug} value={category.slug}>
                   {category.name}
@@ -79,7 +79,7 @@ export default function Home() {
               onChange={(e) => setSelectedRegion(e.target.value)}
               className="form-select"
             >
-              <option value="all">All Regions</option>
+              <option value="all">Greater Accra</option>
               {regions.map((region) => (
                 <option key={region.slug} value={region.slug}>
                   {region.name}
