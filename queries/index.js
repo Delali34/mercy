@@ -243,18 +243,33 @@ export const getCategories = async () => {
 
 export const getRegions = async () => {
   const query = gql`
-    query GetRegions {
-      regions {
+    query GetRegions($first: Int!, $skip: Int!) {
+      regions(first: $first, skip: $skip) {
         name
         slug
       }
     }
   `;
 
+  let allRegions = [];
+  let skip = 0;
+  const first = 10; // Adjust based on how many items you want to fetch at once
+
   try {
-    const result = await request(graphqlAPI, query);
-    return result.regions;
+    let hasMore = true;
+    while (hasMore) {
+      const result = await request(graphqlAPI, query, { first, skip });
+      allRegions = [...allRegions, ...result.regions];
+
+      if (result.regions.length < first) {
+        hasMore = false;
+      } else {
+        skip += first;
+      }
+    }
+    return allRegions;
   } catch (error) {
+    console.error("Failed to fetch regions:", error);
     throw new Error("Failed to fetch regions");
   }
 };

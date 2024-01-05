@@ -58,7 +58,7 @@ export default function Home() {
             </h1>
           </div>
           {/* Dropdowns for Category and Region */}
-          <div className="flex items-center gap-4">
+          <div className="md:flex items-center gap-4">
             {/* Category Dropdown */}
             <select
               value={selectedCategory}
