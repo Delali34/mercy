@@ -6,7 +6,7 @@ function AboutUs() {
     <div className="font-mont">
       <div className="bg-[#C8D0D6]">
         {" "}
-        <div className="max-w-[1320px] mx-auto px-10 pt-20 lg:flex justify-between items-center w-full gap-10">
+        <div className="max-w-[1320px] mx-auto lg:px-10 px-5 pt-20 lg:flex justify-between items-center w-full gap-10">
           <div className="flex-1">
             <h1 className=" text-2xl text-center lg:text-left">About Us</h1>
 
@@ -42,7 +42,7 @@ function AboutUs() {
       </div>
       <div className="bg-[#F2F2F2]">
         {" "}
-        <div className="max-w-[1320px] mx-auto px-10 pt-20 lg:flex justify-between  w-full gap-10">
+        <div className="max-w-[1320px] mx-auto lg:px-10 px-5 pt-20 lg:flex justify-between  w-full gap-10">
           <div className="flex-1">
             <Image
               className="object-cover w-full md:h-[500px] h-[300px]"
@@ -84,7 +84,7 @@ function AboutUs() {
       </div>
       <div className="bg-[#fbfbfb]">
         {" "}
-        <div className="max-w-[1320px] mx-auto px-10 pt-20 lg:flex justify-between  w-full gap-10">
+        <div className="max-w-[1320px] mx-auto lg:px-10 px-5 pt-20 lg:flex justify-between  w-full gap-10">
           <div className="flex-1 py-12 lg:py-1">
             <h1 className=" text-2xl text-center font-bold text-black pb-5 lg:text-left">
               Our Solution
@@ -125,7 +125,7 @@ function AboutUs() {
         <h1 className="text-center pt-20 lg:pb-10 pb-5 font-bold text-3xl">
           Core Activities
         </h1>
-        <div className="max-w-[1320px] mx-auto px-10  lg:flex justify-between  w-full gap-10">
+        <div className="max-w-[1320px] mx-auto lg:px-10 px-5  lg:flex justify-between  w-full gap-10">
           <div className="flex-1 py-12 lg:py-1">
             <h1 className=" text-2xl text-center font-bold text-black pb-5 lg:text-left">
               Awareness Creation
@@ -149,7 +149,7 @@ function AboutUs() {
         </div>
       </div>
       <div className="bg-[#fbfbfb]">
-        <div className="max-w-[1320px] mx-auto px-10 pt-20 lg:flex justify-between  w-full gap-10">
+        <div className="max-w-[1320px] mx-auto lg:px-10 px-5 pt-20 lg:flex justify-between  w-full gap-10">
           <div className="flex-1 py-12 lg:py-1">
             <h1 className=" text-2xl text-center font-bold text-black pb-5 lg:text-left">
               Partnership and collaboration
@@ -172,7 +172,7 @@ function AboutUs() {
         </div>
       </div>
       <div className="bg-[#fbfbfb]">
-        <div className="max-w-[1320px] mx-auto px-10 pt-20 lg:flex justify-between  w-full gap-10">
+        <div className="max-w-[1320px] mx-auto lg:px-10 px-5 pt-20 lg:flex justify-between  w-full gap-10">
           <div className="flex-1 py-12 lg:py-1">
             <h1 className=" text-2xl text-center font-bold text-black pb-5 lg:text-left">
               Public relations and media engagement
@@ -195,7 +195,7 @@ function AboutUs() {
         </div>
       </div>
       <div className="bg-[#fbfbfb] pb-10">
-        <div className="max-w-[1320px] mx-auto px-10 pt-20 lg:flex justify-between  w-full gap-10">
+        <div className="max-w-[1320px] mx-auto lg:px-10 px-5 pt-20 lg:flex justify-between  w-full gap-10">
           <div className="flex-1 py-12 lg:py-1">
             <h1 className=" text-2xl text-center font-bold text-black pb-5 lg:text-left">
               Monitoring and evaluation
@@ -217,7 +217,7 @@ function AboutUs() {
           </div>
         </div>
       </div>
-      <div className="max-w-[1320px] mx-auto px-10 py-10">
+      <div className="max-w-[1320px] mx-auto lg:px-10 px-5 py-10">
         <h1 className="font-bold text-xl text-center ">Funding Partners</h1>
         <div className="flex items-center justify-center">
           <Image
