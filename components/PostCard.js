@@ -13,7 +13,7 @@ const PostCard = ({ post }) => {
         <div className="relative  cursor-pointer ">
           <div className="overflow-hidden rounded-[10px]">
             {" "}
-            <Link href={`/post/${post.slug}`}>
+            <Link href={`/impact/${post.slug}`}>
               <img
                 className="w-[500px] h-[300px] overflow-hidden object-cover rounded-[10px] hover:scale-110 transition duration-700 "
                 src={post.featuredImage.url}
@@ -30,8 +30,8 @@ const PostCard = ({ post }) => {
               </h2>
             </div>
           </Link>
-          <Link href={`/post/${post.slug}`}>
-            <div className="   text-black py-3 ">
+          <Link href={`/impact/${post.slug}`}>
+            <div className=" py-3 ">
               <h2 className="md:text-[19px] text-[15px] font-semibold">
                 {post.title}
               </h2>

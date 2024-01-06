@@ -5,6 +5,7 @@ import Header from "../components/Header";
 import Types from "@/components/Types";
 import Benefits from "@/components/Benefits";
 import Quotes from "@/components/Quotes";
+import FeaturedStories from "@/components/FeaturedStories";
 
 import Imapact from "@/components/Imapact";
 
@@ -14,6 +15,7 @@ const Home = () => {
       <Hero2 />
       <Header />
       <Imapact />
+      <FeaturedStories />
       <Types />
       <Benefits />
       <Quotes />
