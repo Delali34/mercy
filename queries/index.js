@@ -338,3 +338,23 @@ export const getComments = async (slug) => {
     throw new Error("Failed to fetch comments");
   }
 };
+export const getAssessments = async () => {
+  const query = gql`
+    query GetAssessments {
+      assessments {
+        name
+        file {
+          url
+        }
+      }
+    }
+  `;
+
+  try {
+    const result = await request(graphqlAPI, query);
+    return result.assessments;
+  } catch (error) {
+    console.error("Failed to fetch assessments:", error);
+    throw new Error("Failed to fetch assessments");
+  }
+};

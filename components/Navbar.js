@@ -25,7 +25,7 @@ function Homepage() {
                 Featured Stories
               </h1>
             </Link>
-            <Link href="/">
+            <Link href="/ImpactAssessment">
               {" "}
               <h1 className="hover:font-bold hover:text-green-400">
                 Impact Assessment
