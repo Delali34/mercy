@@ -39,7 +39,7 @@ function Imapact() {
             Praesentium architecto accusamus, culpa provident soluta minima cum
             repellendus omnis consequatur
           </p>
-          <Link href="/ImpactStories">
+          <Link href="/ImpactAssessment">
             <h1 className="border-2 border-white mb-5 p-3 text-white text-center hover:text-black hover:bg-white hover:border-black duration-150">
               Read Here
             </h1>
