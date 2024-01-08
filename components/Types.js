@@ -1,16 +1,29 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Types() {
+  useEffect(() => {
+    AOS.init({
+      duration: 700,
+      easing: "slide",
+      once: true,
+    });
+  });
   return (
     <div>
       <div className="max-w-[1320px] mx-auto lg:px-10 px-5 py-10 font-mont">
         <div>
-          <h1 className="text-center text-4xl font-bold">
+          <h1 className="text-center text-4xl font-bold" data-aos="fade-up">
             Types Of <br />
             Clean Energy
           </h1>
-          <div className="max-w-[600px] text-center px-5 mx-auto">
+          <div
+            className="max-w-[600px] text-center px-5 mx-auto"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             <p className="pt-5">
               Clean energy can also help reduce dependence on fossil fuel energy
               sources which are limited and have unstable prices. Clean energy
@@ -18,7 +31,10 @@ function Types() {
             </p>
           </div>
         </div>
-        <div className="relative flex justify-center items-center  mt-10 flex-1">
+        <div
+          className="relative flex justify-center items-center  mt-10 flex-1"
+          data-aos="zoom-in-up"
+        >
           <Image
             className="md:h-[300px] h-[200px] w-full object-cover"
             src="/wind1.jpg"
@@ -33,7 +49,11 @@ function Types() {
             </h1>
           </div>
         </div>
-        <div className="relative  mt-10 flex-1">
+        <div
+          className="relative  mt-10 flex-1"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
           <Image
             className="md:h-[600px] h-[300px] w-full object-cover"
             src="/windmill.jpg"
@@ -54,7 +74,11 @@ function Types() {
             </div>
           </div>
         </div>
-        <div className="relative flex justify-center items-center  mt-10 flex-1">
+        <div
+          className="relative flex justify-center items-center  mt-10 flex-1"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
           <Image
             className="md:h-[300px] h-[200px] w-full object-cover"
             src="/hero1 (3).jpg"

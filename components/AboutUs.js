@@ -1,13 +1,24 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
 import Image from "next/image";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function AboutUs() {
+  useEffect(() => {
+    AOS.init({
+      duration: 700,
+      easing: "slide",
+      once: true,
+    });
+  });
+
   return (
     <div className="font-mont">
       <div className="bg-[#C8D0D6]">
         {" "}
         <div className="max-w-[1320px] mx-auto lg:px-10 px-5 pt-20 lg:flex justify-between items-center w-full gap-10">
-          <div className="flex-1">
+          <div className="flex-1" data-aos="fade-right">
             <h1 className=" text-2xl text-center lg:text-left">About Us</h1>
 
             <p className="pt-5 lg:max-w-[600px] md:text-[17px] text-[15px] pb-10 lg:pb-0">
@@ -29,7 +40,7 @@ function AboutUs() {
             </p>
           </div>
 
-          <div className="flex-1">
+          <div className="flex-1" data-aos="fade-left">
             <Image
               className="object-cover w-full md:h-[500px] h-[300px] "
               src="/clean.jpg"
@@ -43,7 +54,7 @@ function AboutUs() {
       <div className="bg-[#F2F2F2]">
         {" "}
         <div className="max-w-[1320px] mx-auto lg:px-10 px-5 pt-20 lg:flex justify-between  w-full gap-10">
-          <div className="flex-1">
+          <div className="flex-1" data-aos="fade-up">
             <Image
               className="object-cover w-full md:h-[500px] h-[300px]"
               src="/problem.jpg"
@@ -52,7 +63,7 @@ function AboutUs() {
               alt=""
             />
           </div>
-          <div className="flex-1 py-12 lg:py-1">
+          <div className="flex-1 py-12 lg:py-1" data-aos="fade-left">
             <h1 className=" text-2xl text-center font-bold text-black pb-5 lg:text-left">
               The problem
             </h1>
@@ -85,7 +96,7 @@ function AboutUs() {
       <div className="bg-[#fbfbfb]">
         {" "}
         <div className="max-w-[1320px] mx-auto lg:px-10 px-5 pt-20 lg:flex justify-between  w-full gap-10">
-          <div className="flex-1 py-12 lg:py-1">
+          <div className="flex-1 py-12 lg:py-1" data-aos="fade-right">
             <h1 className=" text-2xl text-center font-bold text-black pb-5 lg:text-left">
               Our Solution
             </h1>
@@ -110,7 +121,7 @@ function AboutUs() {
               </span>
             </h1>
           </div>
-          <div className="flex-1">
+          <div className="flex-1" data-aos="fade-left">
             <Image
               className="object-cover w-full md:h-[500px] h-[300px]"
               src="/cover (2).jpg"
@@ -122,10 +133,16 @@ function AboutUs() {
         </div>
       </div>
       <div className="bg-[#fbfbfb]">
-        <h1 className="text-center pt-20 lg:pb-10 pb-5 font-bold text-3xl">
+        <h1
+          className="text-center pt-20 lg:pb-10 pb-5 font-bold text-3xl"
+          data-aos="fade-up"
+        >
           Core Activities
         </h1>
-        <div className="max-w-[1320px] mx-auto lg:px-10 px-5  lg:flex justify-between  w-full gap-10">
+        <div
+          className="max-w-[1320px] mx-auto lg:px-10 px-5  lg:flex justify-between  w-full gap-10"
+          data-aos="fade-up"
+        >
           <div className="flex-1 py-12 lg:py-1">
             <h1 className=" text-2xl text-center font-bold text-black pb-5 lg:text-left">
               Awareness Creation
@@ -149,7 +166,11 @@ function AboutUs() {
         </div>
       </div>
       <div className="bg-[#fbfbfb]">
-        <div className="max-w-[1320px] mx-auto lg:px-10 px-5 pt-20 lg:flex justify-between  w-full gap-10">
+        <div
+          className="max-w-[1320px] mx-auto lg:px-10 px-5 pt-20 lg:flex justify-between  w-full gap-10"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
           <div className="flex-1 py-12 lg:py-1">
             <h1 className=" text-2xl text-center font-bold text-black pb-5 lg:text-left">
               Partnership and collaboration
@@ -172,7 +193,11 @@ function AboutUs() {
         </div>
       </div>
       <div className="bg-[#fbfbfb]">
-        <div className="max-w-[1320px] mx-auto lg:px-10 px-5 pt-20 lg:flex justify-between  w-full gap-10">
+        <div
+          className="max-w-[1320px] mx-auto lg:px-10 px-5 pt-20 lg:flex justify-between  w-full gap-10"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
           <div className="flex-1 py-12 lg:py-1">
             <h1 className=" text-2xl text-center font-bold text-black pb-5 lg:text-left">
               Public relations and media engagement
@@ -195,7 +220,11 @@ function AboutUs() {
         </div>
       </div>
       <div className="bg-[#fbfbfb] pb-10">
-        <div className="max-w-[1320px] mx-auto lg:px-10 px-5 pt-20 lg:flex justify-between  w-full gap-10">
+        <div
+          className="max-w-[1320px] mx-auto lg:px-10 px-5 pt-20 lg:flex justify-between  w-full gap-10"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
           <div className="flex-1 py-12 lg:py-1">
             <h1 className=" text-2xl text-center font-bold text-black pb-5 lg:text-left">
               Monitoring and evaluation
@@ -231,7 +260,10 @@ function AboutUs() {
       </div>
 
       <div className="bg h-[300px] flex justify-center items-center px-5">
-        <h1 className="md:text-6xl text-4xl -tracking-[3px] font-mont text-center text-white font-bold">
+        <h1
+          className="md:text-6xl text-4xl -tracking-[3px] font-mont text-center text-white font-bold"
+          data-aos="fade-up"
+        >
           A Brighter Future With Clean <br /> Energy
         </h1>
       </div>

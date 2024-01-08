@@ -1,11 +1,20 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Imapact() {
   const images = ["/hero1 (1).jpg", "/hero1 (2).jpg", "/hero1 (3).jpg"]; // Add more image paths as needed
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
+  useEffect(() => {
+    AOS.init({
+      duration: 700,
+      easing: "slide",
+      once: true,
+    });
+  });
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) =>
@@ -20,7 +29,7 @@ function Imapact() {
     <div className="bg-black relative">
       <div className="max-w-[1320px] mx-auto lg:px-10 px-5 pb-20  flex lg:flex-row flex-col justify-between items-center gap-10">
         <div className="flex-1">
-          <div className="">
+          <div className="" data-aos="fade-right">
             <Image
               className="aspect-[16/9]"
               src={images[currentImageIndex]}
@@ -30,7 +39,7 @@ function Imapact() {
             />
           </div>
         </div>
-        <div className="flex-1">
+        <div className="flex-1" data-aos="fade-up" data-aos-delay="100">
           <h1 className="text-white text-2xl font-mont font-bold">
             Read Our Publications on the Impact in the society
           </h1>
