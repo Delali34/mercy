@@ -26,10 +26,10 @@ function Types() {
             height={1000}
             alt=""
           />
-          <div className="inset-0 bg-black absolute top-0 left-0 bottom-0 right-0 opacity-30"></div>
+          <div className="inset-0 bg-black absolute top-0 left-0 bottom-0 right-0 opacity-50"></div>
           <div className="absolute top-[50%] ">
-            <h1 className="text-white md:text-xl text-sm text-center font-bold">
-              Windsmill that produce electricity
+            <h1 className="text-white md:text-2xl text-sm text-center font-bold">
+              Solar Power
             </h1>
           </div>
         </div>
@@ -41,16 +41,15 @@ function Types() {
             height={1000}
             alt=""
           />
-          <div className="inset-0 bg-black absolute top-0 left-0 bottom-0 right-0 opacity-30"></div>
+          <div className="inset-0 bg-black absolute top-0 left-0 bottom-0 right-0 opacity-50"></div>
           <div className="absolute md:top-[50%] top-[35%] ">
             <h1 className="text-white md:pl-10 pl-5 md:text-2xl text-sm  font-bold">
-              Windsmill that produce electricity
+              Geothermal Energy
             </h1>
             <div className="md:max-w-[500px] pt-5">
-              <p className="text-white md:pl-10 pl-5  text-[12px] ">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Excepturi, nihil error deserunt autem quam eum. Deleniti
-                laboriosam velit doloribus iusto molestias.
+              <p className="text-white md:pl-10 pl-5  lg:text-[16px] text-[13px] ">
+                Power plants and heat pumps utilizing Earth's heat for
+                low-emission energy.
               </p>
             </div>
           </div>
@@ -65,8 +64,8 @@ function Types() {
           />
           <div className="inset-0 bg-black absolute top-0 left-0 bottom-0 right-0 opacity-30"></div>
           <div className="absolute top-[50%] ">
-            <h1 className="text-white md:text-xl text-sm text-center font-bold">
-              Windsmill that produce electricity
+            <h1 className="text-white md:text-2xl text-[16px] text-center font-bold">
+              Wind Energy
             </h1>
           </div>
         </div>

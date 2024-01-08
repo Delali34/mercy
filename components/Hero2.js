@@ -134,9 +134,9 @@ const Hero2 = () => {
             animate="show"
             className="md:max-w-[400px] max-w-[300px] pt-3    text-justify md:text-sm text-xs text-white pl-1"
           >
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus,
-            error! Distinctio amet hic harum ipsa corrupti dolorem. Culpa dolor
-            quis
+            We are led by our vision to encourage transition to clean and
+            renewable energy through celebrating the creativity of the African
+            people in transforming Africa into a brighter and cleaner continent.
           </motion.p>
         </motion.div>
       </div>

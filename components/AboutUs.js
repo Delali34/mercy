@@ -16,7 +16,7 @@ function AboutUs() {
               by the{" "}
               <span className="font-bold">
                 {" "}
-                Ashesi Entrepreneurship Centers
+                Ashesi Entrepreneurship Centers.{" "}
               </span>
               We are led by our vision to encourage transition to clean and
               renewable energy through celebrating the creativity of the African
@@ -113,7 +113,7 @@ function AboutUs() {
           <div className="flex-1">
             <Image
               className="object-cover w-full md:h-[500px] h-[300px]"
-              src="/solution1.jpg"
+              src="/cover (2).jpg"
               width={1000}
               height={1000}
               alt=""

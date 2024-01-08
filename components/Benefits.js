@@ -1,6 +1,9 @@
 import React from "react";
 import Image from "next/image";
 import { FaHouseDamage } from "react-icons/fa";
+import { FaSolarPanel } from "react-icons/fa";
+import { MdOutlineWindPower } from "react-icons/md";
+import { MdElectricBolt } from "react-icons/md";
 
 function Benefits() {
   return (
@@ -8,7 +11,7 @@ function Benefits() {
       <div>
         {" "}
         <div>
-          <h1 className="text-center text-4xl font-bold">
+          <h1 className="text-center lg:text-4xl text-3xl font-bold">
             Benefits of <br />
             Clean Energy
           </h1>
@@ -30,52 +33,60 @@ function Benefits() {
             />
           </div>
           <div className="flex-1  lg:text-left text-center  h-full">
-            <div className="flex md:flex-row flex-col items-center pt-10 md:pt-0   gap-5">
+            <div className="flex md:flex-row flex-col items-center lg:pt-10 pt-5 md:pt-0   gap-5">
               <div className="rounded-full p-3 bg-green-500">
                 <FaHouseDamage className="text-2xl text-white " />
               </div>
 
               <div>
-                <h1 className=" text-xl font-bold">Geothermal Energy</h1>
+                <h1 className=" lg:text-xl text-[16px] font-bold">
+                  Geothermal Energy
+                </h1>
                 <p className="text-sm md:text-[16px]">
                   Power plants and heat pumps utilizing Earth's heat for
                   low-emission energy.
                 </p>
               </div>
             </div>
-            <div className="flex md:flex-row flex-col items-center pt-10  gap-5">
+            <div className="flex md:flex-row flex-col items-center lg:pt-10 pt-5  gap-5">
               <div className="rounded-full p-3 bg-green-500">
-                <FaHouseDamage className="text-2xl text-white " />
+                <FaSolarPanel className="text-2xl text-white " />
               </div>
 
               <div>
-                <h1 className=" text-xl font-bold">Solar Power</h1>
+                <h1 className=" lg:text-xl text-[16px] font-bold">
+                  Solar Power
+                </h1>
                 <p className="text-sm ">
                   Urban and rural solar panels converting sunlight into
                   electricity, reducing fossil fuel reliance.
                 </p>
               </div>
             </div>
-            <div className="flex md:flex-row flex-col items-center pt-10  gap-5">
+            <div className="flex md:flex-row flex-col items-center lg:pt-10 pt-5  gap-5">
               <div className="rounded-full p-3 bg-green-500">
-                <FaHouseDamage className="text-2xl text-white " />
+                <MdOutlineWindPower className="text-2xl text-white " />
               </div>
 
               <div>
-                <h1 className=" text-xl font-bold">Wind Energy</h1>
+                <h1 className=" lg:text-xl text-[16px] font-bold">
+                  Wind Energy
+                </h1>
                 <p className="text-sm ">
                   Wind turbines in various landscapes generating clean
                   electricity from wind.
                 </p>
               </div>
             </div>
-            <div className="flex md:flex-row flex-col items-center pt-10 gap-5">
+            <div className="flex md:flex-row flex-col items-center lg:pt-10 pt-5 gap-5">
               <div className="rounded-full p-3 bg-green-500">
-                <FaHouseDamage className="text-2xl text-white " />
+                <MdElectricBolt className="text-2xl text-white " />
               </div>
 
               <div>
-                <h1 className=" text-xl font-bold">Hydroelectric Power</h1>
+                <h1 className="lg:text-xl text-[16px] font-bold">
+                  Hydroelectric Power
+                </h1>
                 <p className="text-sm ">
                   Modern dams and river turbines using water flow to produce
                   sustainable energy.
