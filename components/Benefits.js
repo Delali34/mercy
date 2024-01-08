@@ -23,7 +23,7 @@ function Benefits() {
           <div className="flex-1">
             <Image
               className="w-full h-full object-cover"
-              src="/hero.jpg"
+              src="/windmill (1).jpg"
               alt=""
               width={1000}
               height={1000}
@@ -36,12 +36,10 @@ function Benefits() {
               </div>
 
               <div>
-                <h1 className=" text-xl font-bold">
-                  Reducing Greenhouse Gas Emission
-                </h1>
+                <h1 className=" text-xl font-bold">Geothermal Energy</h1>
                 <p className="text-sm md:text-[16px]">
-                  The use of clean energy sources can help reduce greenhouse gas
-                  emission which are the main climate change
+                  Power plants and heat pumps utilizing Earth's heat for
+                  low-emission energy.
                 </p>
               </div>
             </div>
@@ -51,12 +49,10 @@ function Benefits() {
               </div>
 
               <div>
-                <h1 className=" text-xl font-bold">
-                  Reducing Greenhouse Gas Emission
-                </h1>
+                <h1 className=" text-xl font-bold">Solar Power</h1>
                 <p className="text-sm ">
-                  The use of clean energy sources can help reduce greenhouse gas
-                  emission which are the main climate change
+                  Urban and rural solar panels converting sunlight into
+                  electricity, reducing fossil fuel reliance.
                 </p>
               </div>
             </div>
@@ -66,12 +62,10 @@ function Benefits() {
               </div>
 
               <div>
-                <h1 className=" text-xl font-bold">
-                  Reducing Greenhouse Gas Emission
-                </h1>
+                <h1 className=" text-xl font-bold">Wind Energy</h1>
                 <p className="text-sm ">
-                  The use of clean energy sources can help reduce greenhouse gas
-                  emission which are the main climate change
+                  Wind turbines in various landscapes generating clean
+                  electricity from wind.
                 </p>
               </div>
             </div>
@@ -81,12 +75,10 @@ function Benefits() {
               </div>
 
               <div>
-                <h1 className=" text-xl font-bold">
-                  Reducing Greenhouse Gas Emission
-                </h1>
+                <h1 className=" text-xl font-bold">Hydroelectric Power</h1>
                 <p className="text-sm ">
-                  The use of clean energy sources can help reduce greenhouse gas
-                  emission which are the main climate change
+                  Modern dams and river turbines using water flow to produce
+                  sustainable energy.
                 </p>
               </div>
             </div>

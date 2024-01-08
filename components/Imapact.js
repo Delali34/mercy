@@ -34,13 +34,9 @@ function Imapact() {
           <h1 className="text-white text-2xl font-mont font-bold">
             Read Our Publications on the Impact in the society
           </h1>
-          <p className="text-white text-sm md:text-[18px] font-mont py-3">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Praesentium architecto accusamus, culpa provident soluta minima cum
-            repellendus omnis consequatur
-          </p>
+
           <Link href="/ImpactAssessment">
-            <h1 className="border-2 border-white mb-5 p-3 text-white text-center hover:text-black hover:bg-white hover:border-black duration-150">
+            <h1 className="border-2 mt-5 border-white mb-5 p-3 text-white text-center hover:text-black hover:bg-white hover:border-black duration-150">
               Read Here
             </h1>
           </Link>

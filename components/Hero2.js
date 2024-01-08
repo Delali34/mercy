@@ -93,7 +93,7 @@ const Hero2 = () => {
         animate="show"
       >
         <Image
-          src="/hero.jpg"
+          src="/cover (1).jpg"
           alt=""
           fill
           priority={true}

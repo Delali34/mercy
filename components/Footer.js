@@ -1,6 +1,7 @@
 // components/Footer.js
 import React from "react";
 import { BsFacebook, BsInstagram, BsTwitter, BsLinkedin } from "react-icons/bs";
+import { FaXTwitter } from "react-icons/fa6";
 import { AiFillInstagram } from "react-icons/ai";
 import Link from "next/link";
 
@@ -33,7 +34,7 @@ const Footer = () => {
               href="#"
               className="md:text-4xl text-2xl hover:text-[#FF521A] duration-200"
             >
-              <BsTwitter />
+              <FaXTwitter />
             </a>
             <a
               href="#"
@@ -42,11 +43,10 @@ const Footer = () => {
               <BsLinkedin />
             </a>
           </div>
+          <div>
+            <h1 className="text-center pt-5">Greater Accra Region, Ghana</h1>
+          </div>
         </div>
-
-        {/* Second Column */}
-
-        {/* Third Column */}
       </div>
       <hr className="mt-8" />
       <div className="mt-8 text-center">

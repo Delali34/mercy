@@ -20,21 +20,18 @@ const DemoCarousel = () => {
           <div className="flex-1">
             <span className="text-8xl text-green-400 font-bold">"</span>
             <p className="">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-              quaerat quis minima maxime veniam quo libero illum, laudantium
-              itaque, autem mollitia praesentium quisquam ex sit temporibus nisi
-              modi accusamus dolorum?
+              Once you got a solar panel on a roof, energy is free. Once we
+              convert our entire electricity grid to green and renewable energy,
+              cost of living goes down.
             </p>
-            <p className="font-semibold pt-10">
-              March Guehi- CEO of Crystal Palace
-            </p>
+            <p className="font-semibold pt-10">Elizabeth May</p>
           </div>
           <div className="flex-1">
             <Image
               width={500}
               height={500}
               className="w-full h-full object-cover"
-              src="/hero.jpg"
+              src="/wind1.jpg"
               alt="Image 1"
             />
           </div>
@@ -43,21 +40,20 @@ const DemoCarousel = () => {
           <div className="flex-1">
             <span className="text-8xl text-green-400 font-bold">"</span>
             <p className="">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-              quaerat quis minima maxime veniam quo libero illum, laudantium
-              itaque, autem mollitia praesentium quisquam ex sit temporibus nisi
-              modi accusamus dolorum?
+              Just as fossil fuels from conventional sources are finite and are
+              becoming depleted, those from difficult sources will also run out.
+              If we put all our energy and resources into continued fossil fuel
+              extraction, we will have lost an opportunity to have invested in
+              renewable energy.
             </p>
-            <p className="font-semibold pt-10">
-              March Guehi- CEO of Crystal Palace
-            </p>
+            <p className="font-semibold pt-10">David Suzuki</p>
           </div>
           <div className="flex-1">
             <Image
               width={500}
               height={500}
               className="w-full h-full object-cover"
-              src="/hero.jpg"
+              src="/windmill.jpg"
               alt="Image 1"
             />
           </div>
@@ -66,21 +62,18 @@ const DemoCarousel = () => {
           <div className="flex-1">
             <span className="text-8xl text-green-400 font-bold">"</span>
             <p className="">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-              quaerat quis minima maxime veniam quo libero illum, laudantium
-              itaque, autem mollitia praesentium quisquam ex sit temporibus nisi
-              modi accusamus dolorum?
+              I've been very passionate about renewable energy for many years,
+              particularly solar energy and its capacity to bring abundant
+              clean, sustainable energy to millions around the globe.
             </p>
-            <p className="font-semibold pt-10">
-              March Guehi- CEO of Crystal Palace
-            </p>
+            <p className="font-semibold pt-10">Richard Brandson</p>
           </div>
           <div className="flex-1">
             <Image
               width={500}
               height={500}
               className="w-full h-full object-cover"
-              src="/hero.jpg"
+              src="/richard.jpg"
               alt="Image 1"
             />
           </div>

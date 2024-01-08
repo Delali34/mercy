@@ -21,7 +21,7 @@ function Types() {
         <div className="relative flex justify-center items-center  mt-10 flex-1">
           <Image
             className="md:h-[300px] h-[200px] w-full object-cover"
-            src="/hero1 (3).jpg"
+            src="/wind1.jpg"
             width={1000}
             height={1000}
             alt=""
@@ -36,7 +36,7 @@ function Types() {
         <div className="relative  mt-10 flex-1">
           <Image
             className="md:h-[600px] h-[300px] w-full object-cover"
-            src="/hero1 (3).jpg"
+            src="/windmill.jpg"
             width={1000}
             height={1000}
             alt=""
