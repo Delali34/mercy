@@ -14,11 +14,9 @@ const Footer = () => {
           <h3 className="text-xl font-bold mb-4 text-center">
             CleanEnergyCafe
           </h3>
-          <p className="text-center">
-            Making a Difference, One Act of Cleanness at a Time.
-          </p>
+
           <div className="flex justify-center space-x-4 mt-4">
-            <a
+            {/* <a
               href="#"
               className="md:text-4xl text-2xl hover:text-[#FF521A] duration-200"
             >
@@ -35,13 +33,22 @@ const Footer = () => {
               className="md:text-4xl text-2xl hover:text-[#FF521A] duration-200"
             >
               <FaXTwitter />
-            </a>
+            </a> */}
             <a
-              href="#"
+              href="https://www.linkedin.com/company/cleanenergy-cafe/"
+              target="_blank"
               className="md:text-4xl text-2xl hover:text-[#FF521A] duration-200"
             >
               <BsLinkedin />
             </a>
+          </div>
+          <div>
+            <h1 className="text-center pt-5 font-mont font-semibold">
+              Phone number: +233 205540597
+            </h1>
+            <h1 className="font-mont font-semibold">
+              Email: CleanEnergyCafe@gmail.com
+            </h1>
           </div>
           <div>
             <h1 className="text-center pt-5">Greater Accra Region, Ghana</h1>
