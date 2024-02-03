@@ -44,7 +44,7 @@ const Contact = () => {
       formData.append("file", attachment);
 
       // Use Formspree URL in the action attribute
-      await fetch("https://getform.io/f/482580f7-14a7-414c-b312-335e5b7d020b", {
+      await fetch("https://getform.io/f/429c76df-d4b3-4815-8c2e-7e2b53fec7c2", {
         method: "POST",
         body: formData,
         enctype: "multipart/form-data",
